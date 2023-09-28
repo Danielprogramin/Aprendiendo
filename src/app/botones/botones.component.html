@@ -1,0 +1,10 @@
+<div>
+    <button class="btn btn-primary" (click)="src = 'https://images.pexels.com/photos/18061788/pexels-photo-18061788/free-photo-of-ciudad-panorama-urbano-hotel-edificio.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'">
+        imagen 1
+    </button>
+    <button class="btn btn-secondary" (click)="src = 'https://images.pexels.com/photos/16067574/pexels-photo-16067574/free-photo-of-blanco-y-negro-nubes-panorama-urbano-puente.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'">
+        imagen 2
+    </button>
+</div>
+
+<img [src]="src" alt="">
