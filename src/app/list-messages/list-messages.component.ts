@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessagesService } from '../messages.service';
 
 @Component({
   selector: 'app-list-messages',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-messages.component.css']
 })
 export class ListMessagesComponent {
+
+  constructor (public messagesService: MessagesService){}
 
 }

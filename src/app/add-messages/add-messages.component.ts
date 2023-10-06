@@ -8,9 +8,14 @@ import { MessagesService } from '../messages.service';
 })
 export class AddMessagesComponent {
 
-  constructor (public messagesService: MessagesService){
+  constructor (public messagesService: MessagesService){}
 
-    
-  }
+    message: string = "";
+
+    addMessage(){
+      this.messagesService.add(this.message);
+      this.message = "";  
+    }
+
 
 }
